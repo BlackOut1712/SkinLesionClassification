@@ -1,0 +1,106 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ==============================
+# Virtual environments
+# ==============================
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ==============================
+# Environment variables & secrets
+# ==============================
+.env
+.env.*
+!.env.example
+secrets.toml
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+.jupyter/
+profile_default/
+ipython_config.py
+
+# ==============================
+# Visual Studio Code
+# ==============================
+.vscode/
+.history/
+*.code-workspace
+
+# ==============================
+# Keras / TensorFlow
+# ==============================
+*.keras
+*.h5
+*.hdf5
+*.ckpt
+*.ckpt.*
+*.tflite
+.keras/
+checkpoints/
+saved_models/
+tensorboard/
+logs/
+runs/
+wandb/
+
+# ==============================
+# Datasets
+# ==============================
+data/raw/
+data/processed/
+data/external/
+data/interim/
+
+# ==============================
+# Generated outputs
+# ==============================
+outputs/
+results/
+artifacts/
+models/
+dataset/
+*.log
+*.tmp
+
+# ==============================
+# Streamlit
+# ==============================
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# ==============================
+# Testing & linting
+# ==============================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Operating systems
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Keep empty directories
+# ==============================
+!.gitkeep

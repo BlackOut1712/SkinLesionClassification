@@ -1,8 +1,7 @@
 import streamlit as st
 
 from views.analysis import render_analysis_page
-from components.image_uploader import render_image_upload
-
+from src.config import MODEL_PATH
 
 def main():
     st.set_page_config(

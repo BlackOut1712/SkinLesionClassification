@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 
 import tensorflow as tf
-from tensorflow.keras import Model
 
+from src.gradcam import build_gradcam
 from src.config import (
     MODEL_PATH,
     CLASS_NAMES_PATH,
@@ -14,6 +14,12 @@ from src.config import (
 
 def load_model(model_path: Path=MODEL_PATH) -> tf.keras.Model:
     return tf.keras.models.load_model(model_path, compile=False)
+
+def load_gradcam(model_path: Path=MODEL_PATH):
+    model = load_model(model_path)
+    gradcam = build_gradcam(model)
+
+    return gradcam
 
 def load_class_names(class_names_path: Path=CLASS_NAMES_PATH) -> list[str]:
     with open(class_names_path, encoding='utf-8') as file:
